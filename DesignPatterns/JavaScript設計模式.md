@@ -313,8 +313,6 @@
 
 &emsp;&emsp;本书主要面向初中级 JavaScript 开发人员。本书虽然以设计模式为主题，但也讲述了一些 JavaScript 开发中需要的基础知识，初级程序员也能从这里找到自己需要的东西。而对于中级程序员而言，学习设计模式的过程，可能正是往高级进阶的过程。
 
-2 序
-
 #### 示例代码与勘误
 
 &emsp;&emsp;本书提供了丰富的示例，示例代码可以在图灵社区本书主页（http://www.ituring.com.cn/book/1632）的“随书下载”中下载使用。
@@ -1474,8 +1472,7 @@ var func = function (a, b, c) {
 func.apply(null, [1, 2, 3]);
 ```
 
-&emsp;&emsp;有时候我们使用 call 或者 apply 的目的不在于指定 this 指向，而是另有用途，比如借用其
-&emsp;&emsp;他对象的方法。那么我们可以传入 null 来代替某个具体的对象：
+&emsp;&emsp;有时候我们使用 call 或者 apply 的目的不在于指定 this 指向，而是另有用途，比如借用其他对象的方法。那么我们可以传入 null 来代替某个具体的对象：
 
 ##### 2.2.2 call 和 apply 的用途
 
@@ -1501,8 +1498,7 @@ getName.call(obj1); // 输出: sven
 getName.call(obj2); // 输出: anne
 ```
 
-&emsp;&emsp;当执行 getName.call( obj1 )这句代码时，getName 函数体内的 this 就指向 obj1 对象，所以
-&emsp;&emsp;此处的
+&emsp;&emsp;当执行 getName.call( obj1 )这句代码时，getName 函数体内的 this 就指向 obj1 对象，所以此处的
 
 ```js
 var getName = function () {
